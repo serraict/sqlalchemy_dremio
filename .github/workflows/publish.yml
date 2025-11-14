@@ -1,8 +1,9 @@
 name: Publish to PyPI
 
 on:
-  release:
-    types: [published]
+  push:
+    tags:
+      - 'v*.*.*'  # Trigger on version tags like v3.0.5
   workflow_dispatch:
     inputs:
       environment:
@@ -48,5 +49,5 @@ jobs:
           skip-existing: true
 
       - name: Publish to PyPI
-        if: github.event_name == 'release' || (github.event_name == 'workflow_dispatch' && github.event.inputs.environment == 'pypi')
+        if: startsWith(github.ref, 'refs/tags/v') || (github.event_name == 'workflow_dispatch' && github.event.inputs.environment == 'pypi')
         uses: pypa/gh-action-pypi-publish@release/v1
