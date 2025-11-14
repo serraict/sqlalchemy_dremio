@@ -62,3 +62,6 @@ target/
 
 # pyenv python configuration file
 .python-version
+
+# work directory
+work/

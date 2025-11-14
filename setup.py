@@ -20,14 +20,14 @@ test_requirements = [
 ]
 
 setup(
-    name='sqlalchemy_dremio',
+    name='serraict-sqlalchemy-dremio',
     version='3.0.4',
     description="A SQLAlchemy dialect for Dremio via the Flight interface.",
     long_description=readme,
     long_description_content_type='text/markdown',
-    author="Naren",
-    author_email='me@narendran.info',
-    url='https://github.com/narendrans/sqlalchemy_dremio',
+    author="Marijn van der Zee",
+    author_email='marijn@serraict.com',
+    url='https://github.com/serraict/sqlalchemy_dremio',
     packages=find_packages(include=['sqlalchemy_dremio']),
     entry_points={
         'sqlalchemy.dialects': [

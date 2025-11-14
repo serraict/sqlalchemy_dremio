@@ -1,8 +1,11 @@
 # SQLAlchemy Dremio
 
+Fork of [narendrans/sqlalchemy_dremio](https://github.com/narendrans/sqlalchemy_dremio) with unreleased changes.
 
-![PyPI](https://img.shields.io/pypi/v/sqlalchemy_dremio.svg)
-![CI](https://github.com/narendrans/sqlalchemy_dremio/actions/workflows/dremio.yml/badge.svg)
+![PyPI](https://img.shields.io/pypi/v/serraict-sqlalchemy-dremio.svg)
+![CI](https://github.com/serraict/sqlalchemy_dremio/actions/workflows/dremio.yml/badge.svg)
+![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)
+![Python](https://img.shields.io/badge/python-3.7+-blue.svg)
 
 A SQLAlchemy dialect for Dremio via ODBC and Flight interfaces.
 
@@ -19,11 +22,7 @@ Installation
 From pip:
 -----------
 
-`pip install sqlalchemy_dremio`
-
-Or from conda:
---------------
-`conda install sqlalchemy-dremio`
+`pip install serraict-sqlalchemy-dremio`
 
 To install from source:
 `python setup.py install`
